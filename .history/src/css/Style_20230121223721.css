@@ -1,0 +1,14 @@
+/* style table border */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* center the table */
+table {
+  margin: 0 auto;
+}
+add padding to table cells
+  .table-cell-padding {
+    padding: 15px;
+  }
