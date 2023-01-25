@@ -1,71 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../HTML-2/src/css/Style.css" type="text/css">
-  <title>HTML Table Assignment 2</title>
-</head>
-  
-<body>
-  <!-- Build Table -->
-  <table>
-    <thead>
-      <tr>
-        <!-- Name column headings -->
-        <th>Company</th>
-        <th>Model</th>
-        <th>Phone</th>
-        <th>City</th>
-        <th>Country</th>
-        <th>Staff</th>
-        <th>Industry</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <!--Beginning table data  -->
-        <td class="table-cell-padding">Dodge</td>
-        <td class="table-cell-padding">Challenger</td>
-        <td class="table-cell-padding">801-345-3456</td>
-        <td class="table-cell-padding">Georgetown</td>
-        <td class="table-cell-padding">USA</td>
-        <td class="table-cell-padding">600</td>
-        <td class="table-cell-padding">Automotive</td>
-      </tr>
-       <tr>
-        <td class="table-cell-padding">Maruti</td>
-        <td class="table-cell-padding">Swift</td>
-        <td class="table-cell-padding">385-322-9999</td>
-        <td class="table-cell-padding">Blue City</td>
-        <td class="table-cell-padding">USA</td>
-        <td class="table-cell-padding">100</td>
-        <td class="table-cell-padding">Automotive</td>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/Style.css" type="text/css">
+    <title>Contact Page</title>
+  </head>
+
+  <body>
+    <!-- form heading -->
+    <p><h2>CONTACT  US</h2></p>
+
+    <!-- form input objects -->
+    <form id="contact-frm" name="contact-page" accept-charset="utf-8" margin="auto" VALUE="Reset" action="" method="">
+      <fieldset id="input-frm">
+        <p><input type="text" name="name" placeholder= "Full Name" required></p>
+        <p><input type="email" name="email-address" id="email-address" placeholder="sunny.dayz@gmail.com" required></p>      
         
-      </tr>
-      <tr>
-        <td class="table-cell-padding">Jeep</td>
-        <td class="table-cell-padding">Wrangler</td>
-        <td class="table-cell-padding">245-259-3999</td>
-        <td class="table-cell-padding">Los Angeles</td>
-        <td class="table-cell-padding">USA</td>
-        <td class="table-cell-padding">150</td>
-        <td class="table-cell-padding">Automotive</td>
-      </tr>
-      <tr>
-        <td class="table-cell-padding">BMW</td>
-        <td class="table-cell-padding">DMW 5 Series</td>
-        <td class="table-cell-padding">272-222-6879</td>
-        <td class="table-cell-padding">Berkley</td>
-        <td class="table-cell-padding">USA</td>
-        <td class="table-cell-padding">75</td>
-        <td class="table-cell-padding">Automotive</td>
-      </tr>
-    </tbody>
-    <!-- Ending table data -->
-  </table>
+        <!-- priority dropdown values -->
+        <label>Priority</label>
+        <select name="priority" id="priority">  
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        
+          <!-- message box -->
+        </select>
+        <p><textarea name="message" rows="12" cols="65"placeholder="Message" maxlength=1000></textarea></p>
 
- </body>
+        <!-- submit/send button -->
+        <p><input type="submit" id="button" value= "Send"></p>
+      </fieldset>
+      
+    </form>
 
+  </body>
 </html>

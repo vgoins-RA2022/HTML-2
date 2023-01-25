@@ -1,14 +1,57 @@
-/* style table border */
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+/* Style.css */
+
+body, form, span, select, input, textarea{ font-family: 'Open Sans', sans-serif; font-size: 18px;color:rgb(34, 32, 32)}
+
+/* margin values in a single definition */
+body{Margin : 75px 150px 150px 150px;} 
+
+/* format input boxes */
+input{
+  display:block;
+  padding:10px;
+  border-radius:10px;
+  width: 90%;
+}
+/* format send button */
+select {
+  width: 100px;
+  padding:10px;
+  border-radius:10px;
+}
+/* format message text area */
+textarea {
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+}
+body { 
+background-color: rgba(23, 66, 21, 0.585);
 }
 
-/* center the table */
-table {
-  margin: 0 auto;
+input-frm{size: 150px;}
+
+h1, h2{text-align: center; color:rgb(6, 40, 6)}
+label{color:rgb(6, 40, 6)}
+submit{width:50%}
+
+
+/* Style the input fields */
+input {
+  /* background-color: #B2BF1B; */
+  color: rgba(31, 59, 3, 0.558);
+  padding: 12px 20px;
+  border:10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
-/* add padding to table cells */
-  .table-cell-padding {
-    padding: 15px;
-  }
+
+/* Shadow field when moving the mouse over the submit button */
+input[type=submit]:hover {
+  background-color: #90c34a;
+}
+
+/* button{
+  padding-left: 80px; 
+  padding-left: 80;} */
